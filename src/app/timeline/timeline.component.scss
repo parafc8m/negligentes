@@ -1,0 +1,84 @@
+.container {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dia {
+    margin-bottom: 32px;
+
+    .descripciones {
+        margin-bottom: 16px;
+
+        .descripcion {
+            display: flex;
+        }
+    }
+
+    .comentario {
+        margin-bottom: 8px;
+        display: flex;
+        >div {
+            flex: 1 1;
+        }
+
+        .foto {
+            max-width: 90px;
+        }
+
+        .nombre-texto {
+            padding-top: 8px;
+            padding-right: 8px;
+            .nombre {
+                font-weight: bold;
+            }
+
+            .texto {
+                font-size: 10pt;
+            }
+
+        }
+    }
+}
+
+.header-dia {
+    display: flex;
+    border-bottom: 1px solid darkred;
+    margin-bottom: 16px;
+
+    >div {
+        padding: 8px 16px;
+        flex: 0 0;
+
+        &.fecha {
+            flex: 1 1;
+            color: darkred;
+            font-weight: bold;
+            padding-left: 0;
+        }
+
+        &.infectados, &.muertos {
+            font-weight: bold;
+        }
+
+        &.infectados-data, &.muertos-data {
+            color: gray;
+            >div {
+                display: flex;
+                .etiqueta {
+                    min-width: 64px;
+                }
+
+                .cantidad {
+                    text-align: right;
+                    min-width: 64px;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        &.muertos-data {
+            padding-right: 0;
+        }
+    }
+}

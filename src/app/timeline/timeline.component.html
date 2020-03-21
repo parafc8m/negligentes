@@ -1,0 +1,47 @@
+<div class="container">
+    <div *ngFor="let dia of diario" class="dia">
+        <div class="header-dia">
+            <div class="fecha">{{ dia.fecha  | date:'dd-MM-yyyy' }}</div>
+            <div class="infectados"><label>Infectados</label></div>
+            <div class="infectados-data">
+                <div><div class="etiqueta">Italia:</div><div class="cantidad">{{ dia.infectadosItalia }}</div></div>
+                <div><div class="etiqueta">España:</div><div class="cantidad">{{ dia.infectadosEspana }}</div></div>
+            </div>
+            <div class="muertos"><label>Muertos</label></div>
+            <div class="muertos-data">
+                <div><div class="etiqueta">Italia:</div><div class="cantidad">{{ dia.muertosItalia }}</div></div>
+                <div><div class="etiqueta">España:</div><div class="cantidad">{{ dia.muertosEspana }}</div></div>
+            </div>
+        </div>
+        <div class="descripciones">
+            <div *ngFor="let text of dia.descripcion" class="descripcion">
+                <div class="texto">{{ text.texto }}</div>
+                <div class="media" *ngIf="text.media"><a href=""><img src="assets/{{ text.media }}"/></a></div>
+
+            </div>
+        </div>
+        <div class="comentarios">
+            <div *ngFor="let item of dia.comentarios" class="comentario">
+                <div class="foto">
+                    <img width="80" src="https://i2.wp.com/aumentada.net/wp-content/uploads/2015/05/user.png?w=256&ssl=1"/>
+                </div>
+                <div class="nombre-texto">
+                    <div class="nombre">
+                        {{ item.nombre }}
+                    </div>
+                    <div class="texto">
+                        {{ item.comentario }}
+                    </div>
+                </div>
+                <div class="video" *ngIf="item.video">
+                    <iframe width="560" height="315" [src]="getUrlVideo(item.video)"
+                    frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
