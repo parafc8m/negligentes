@@ -17,6 +17,7 @@
                 &.media {
                     padding-right: 8px;
                 }
+                margin-bottom: 8px;
             }
         }
     }
@@ -48,6 +49,20 @@
                 font-size: 8pt;
             }
 
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .dia {
+        .comentario {
+            flex-direction: column;
+        }
+
+        .descripciones {
+            .descripcion {
+                flex-direction: column;
+            }
         }
     }
 }
@@ -90,6 +105,35 @@
 
         &.muertos-data {
             padding-right: 0;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .dia {
+        .comentario {
+            flex-direction: column;
+        }
+
+        .descripciones {
+            .descripcion {
+                flex-direction: column;
+            }
+        }
+    }
+
+    .header-dia {
+        >div {
+            padding: 4px 8px;
+
+            &.infectados-data, &.muertos-data {
+                font-size: 8pt;
+                >div {
+                    .cantidad {
+                        min-width: 32px;
+                    }
+                }
+            }
         }
     }
 }

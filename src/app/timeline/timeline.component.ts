@@ -32,7 +32,11 @@ export class TimelineComponent implements OnInit {
     });
   }
 
-  getUrlVideo(url) {    
+  getUrlVideo(url) {
     return this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/' + url);
+  }
+
+  getUrl(url) {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }
 }

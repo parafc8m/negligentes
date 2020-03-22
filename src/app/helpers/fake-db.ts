@@ -374,7 +374,10 @@ export const DIAS = [
         muertosItalia: 233,
         infectadosEspana: 430,
         muertosEspana: 8,
-        descripcion: [{ texto: '430 casos, décimo fallecido.  El PSOE afirma en twitter que "hay que salir a llenar las calles". También 7 de Marzo:  Simón afirma que el brote está bajo control y deja al criterio de cada uno si asistir al 8M.'}]
+        descripcion: [
+            { texto: '430 casos, décimo fallecido.  El PSOE afirma en twitter que "hay que salir a llenar las calles". También 7 de Marzo:  Simón afirma que el brote está bajo control y deja al criterio de cada uno si asistir al 8M.'},
+            { texto: 'GOBIERNO Y SUS VOCEROS ENVÍA A ESPAÑA AL MATADERO'}
+        ]
     },
     {
         fecha: new Date('2020-03-08'),
@@ -541,6 +544,23 @@ export const DATA =  [
         fecha: new Date('2020-02-25')
     },
     {
+        nombre: 'Lorenzo Milá',
+        comentario: [
+            'Es una gripe con baja mortalidad pero se extiende más el alarmismo'
+        ],
+        video: 'l9YGfLGEyT4',
+        fecha: new Date('2020-02-25')
+    },
+    {
+        nombre: 'Echenique',
+        comentario: [
+            'Frente al pseudoperiodismo de los reporteros con mascarilla, frente al clickbait del "vamos a morir todos", frente a la extrema derecha pidiendo cierre de fronteras por una gripe menos agresiva que la de todos los años, el rigor y la profesionalidad de Lorenzo Milá'
+        ],
+        media: '2020-03-22-14-52-21.png',
+        link: 'https://twitter.com/pnique/status/1232297323964792833',
+        fecha: new Date('2020-02-25')
+    },
+    {
         nombre: 'Echenique',
         comentario: [
             'En las portadas y en las tertulias el coronavirus corre desbocado y es una peligrosísima pandemia que causa pavor.  En el mundo real, el coronavirus está absolutamente controlado en Espana.  Ojalá un día el sistema mediático tenga la mitad de calidad que el sistema sanitario.'
@@ -549,6 +569,8 @@ export const DATA =  [
         link: 'https://twitter.com/pnique/status/1232217711125684224',
         fecha: new Date('2020-02-25')
     },
+
+
     {
         nombre: 'Iñaki Gabilondo',
         comentario: [
@@ -562,6 +584,15 @@ export const DATA =  [
             'Esto forma parte de la guerra Donald Trump - China'
         ],
         fecha: new Date('2020-02-25')
+    },
+    {
+        nombre: 'Ferreras',
+        comentario: [
+            'Algo que es más letal, por decirlo de alguna manera, que el coronavirus.  El terrorismo machista: duodécima victima'
+        ],
+        fecha: new Date('2020-02-26'),
+        twitter: 'https://twitter.com/JosPastr/status/1241423481084018688',
+        minuto: '1:48'
     },
     {
         nombre: 'Antonio Maestre',
@@ -592,7 +623,7 @@ export const DATA =  [
         fecha: new Date('2020-03-04')
     },
 
-    
+
     {
         nombre: 'Ignacio Escolar',
         comentario: [
@@ -620,7 +651,16 @@ export const DATA =  [
         ],
         video: 'VM3B-q6uGCY',
         fecha: new Date('2020-03-06')
-    },    
+    },
+    {
+        nombre: 'PODEMOS',
+        comentario: [
+            'Ya son casi 400 las convocatorias para este #8M en todo el país. ¡Busca tu cuidad y súmate! Aquí los datos actualizados.',
+        ],
+        media: '2020-03-22 14-22-11.png',
+        link: 'https://twitter.com/PODEMOS/status/1236207259119685632',
+        fecha: new Date('2020-03-07')
+    },
     {
         nombre: 'Carmen Calvo',
         comentario: [
@@ -655,8 +695,8 @@ export const DATA =  [
         video: 'tkDEBonk754',
         fecha: new Date('2020-03-08')
     },
-    
-    
+
+
     {
         nombre: 'Anabel Alonso',
         comentario: [

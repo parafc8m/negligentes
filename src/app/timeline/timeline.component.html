@@ -15,7 +15,9 @@
         </div>
         <div class="descripciones">
             <div *ngFor="let text of dia.descripcion" class="descripcion">
-                <div class="texto" [class.media]="!!text.media">{{ text.texto }}</div>
+                <div class="texto" [class.media]="!!text.media">
+                    {{ text.texto }}
+                </div>
                 <div class="media" *ngIf="text.media">
                     <a href="{{text.link}}" target="_blank"><img src="assets/{{ text.media }}"/></a>
                 </div>
@@ -44,6 +46,11 @@
                 </div>
                 <div class="media" *ngIf="item.media">
                     <a href="{{item.link}}" target="_blank"><img src="assets/{{ item.media }}"/></a>
+                </div>
+                <div class="twitter" *ngIf="item.twitter">
+                    <blockquote class="twitter-video" data-lang="en">
+                        <a href="{{ getUrl(item.twitter) }}">April 10, 2016</a>
+                    </blockquote>
                 </div>
             </div>
         </div>
