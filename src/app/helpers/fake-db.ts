@@ -67,7 +67,7 @@ export const DIAS = [
         infectadosEspana: 1,
         muertosEspana: 0,
         descripcion: [
-            'La OMS pide 650 millones de dólares a los gobiernos para un plan de respuesta ante el coronavirus'
+            { texto: 'La OMS pide 650 millones de dólares a los gobiernos para un plan de respuesta ante el coronavirus'}
         ]
     },
     {
@@ -95,7 +95,7 @@ export const DIAS = [
         infectadosEspana: 1,
         muertosEspana: 0,
         descripcion: [
-            'Brote. El coronavirus deja más de 700 muertos en China, entre ellos los 2 primeros extranjeros'
+            { texto: 'Brote. El coronavirus deja más de 700 muertos en China, entre ellos los 2 primeros extranjeros'}
         ]
     },
 
@@ -107,8 +107,8 @@ export const DIAS = [
         infectadosEspana: 2,
         muertosEspana: 0,
         descripcion: [
-            'Confirmado el segundo caso de coronavirus en Espana',
-            'Amazon también se cae del Mobile World Congress, tras LG, Ericsson y Nvidia'
+            { texto: 'Confirmado el segundo caso de coronavirus en Espana'},
+            { texto: 'Amazon también se cae del Mobile World Congress, tras LG, Ericsson y Nvidia'}
         ]
     },
     {
@@ -118,7 +118,7 @@ export const DIAS = [
         infectadosEspana: 2,
         muertosEspana: 0,
         descripcion: [
-            'Sony cancela también su participación en el Mobile World Congress',
+            { texto: 'Sony cancela también su participación en el Mobile World Congress'},
         ]
     },
     {
@@ -128,7 +128,7 @@ export const DIAS = [
         infectadosEspana: 2,
         muertosEspana: 0,
         descripcion: [
-            'La OMS estima que no habrá vacuna para el coronavirus hasta dentro de 18 meses'
+            { texto: 'La OMS estima que no habrá vacuna para el coronavirus hasta dentro de 18 meses'}
         ]
     },
     {
@@ -138,7 +138,7 @@ export const DIAS = [
         infectadosEspana: 2,
         muertosEspana: 0,
         descripcion: [
-            'Barcelona. La organización cancela el Mobile World Congress por el brote de coronavirus',
+            { texto: 'Barcelona. La organización cancela el Mobile World Congress por el brote de coronavirus'},
             // 'El gobierno cree que no hay ninguna razón para que el Mobile World Congress no se celebre'
         ]
     },
@@ -148,7 +148,9 @@ export const DIAS = [
         muertosItalia: 0,
         infectadosEspana: 2,
         muertosEspana: 1,
-        descripcion: 'El Mobile World Congress anuncia cierre definitivo.'
+        descripcion: [
+            { texto: 'El Mobile World Congress anuncia cierre definitivo.'}
+        ]
     },
     {
         fecha: new Date('2020-02-14'),
@@ -157,7 +159,7 @@ export const DIAS = [
         infectadosEspana: 2,
         muertosEspana: 1,
         descripcion: [
-            'Brote. El coronavirus llega a África: primer caso de contagio en Egipto'
+            { texto: 'Brote. El coronavirus llega a África: primer caso de contagio en Egipto'}
         ]
     },
 
@@ -168,7 +170,7 @@ export const DIAS = [
         infectadosEspana: 2,
         muertosEspana: 1,
         descripcion: [
-            'Francia registra la primera muerte por coronavirus en Europa'
+            { texto: 'Francia registra la primera muerte por coronavirus en Europa'}
         ]
     },
 
@@ -179,7 +181,7 @@ export const DIAS = [
         infectadosEspana: 2,
         muertosEspana: 1,
         descripcion: [
-            'Estados Unidos evacua a sus ciudadanos de un crucero en Japón y 40 de ellos serán hospitalizados por coronavirus'
+            { texto: 'Estados Unidos evacua a sus ciudadanos de un crucero en Japón y 40 de ellos serán hospitalizados por coronavirus'}
         ]
     },
 
@@ -190,7 +192,7 @@ export const DIAS = [
         infectadosEspana: 2,
         muertosEspana: 1,
         descripcion: [
-            'Ada Colau asegura en varias ocasiones que el MWC no escapa a la guerra comercial entre EEUU y China.  La junta directiva de la GSMA, reunida hoy en su sede central de Londres, ha emitido un comunicado lamentando la cancelación del Mobile World Congress y ha vuelto a contradecir la versión de Ada Colau reiterando que la decisión de no celebrar la convocatoria de este año fue por motivos “de salud” y de “seguridad”. De hecho, la patronal organizadora del evento califica de “dolorosa” la postura tomada, aunque defiende que es la correcta ante el miedo derivado del brote de coronavirus y la cancelación de empresas participantes, un goteo incesante desde el pasado 5 de febrero.'
+            { texto: 'Ada Colau asegura en varias ocasiones que el MWC no escapa a la guerra comercial entre EEUU y China.  La junta directiva de la GSMA, reunida hoy en su sede central de Londres, ha emitido un comunicado lamentando la cancelación del Mobile World Congress y ha vuelto a contradecir la versión de Ada Colau reiterando que la decisión de no celebrar la convocatoria de este año fue por motivos “de salud” y de “seguridad”. De hecho, la patronal organizadora del evento califica de “dolorosa” la postura tomada, aunque defiende que es la correcta ante el miedo derivado del brote de coronavirus y la cancelación de empresas participantes, un goteo incesante desde el pasado 5 de febrero.'}
         ]
     },
     {
@@ -200,7 +202,7 @@ export const DIAS = [
         infectadosEspana: 2,
         muertosEspana: 1,
         descripcion: [
-            'Rusia suspende la entrada de ciudadanos chinos a partir del 20 de febrero'
+            { texto: 'Rusia suspende la entrada de ciudadanos chinos a partir del 20 de febrero'}
         ]
     },
     {
@@ -230,7 +232,7 @@ export const DIAS = [
         infectadosEspana: 2,
         muertosEspana: 1,
         descripcion: [
-            'El coronavirus llega a Venecia y ya hay más de 100 contagiados y 2 muertos en Italia',
+            { texto: 'El coronavirus llega a Venecia y ya hay más de 100 contagiados y 2 muertos en Italia'}
         ]
     },
     {
@@ -240,7 +242,7 @@ export const DIAS = [
         infectadosEspana: 2,
         muertosEspana: 1,
         descripcion: [
-            'Italia suspende el Inter-Sampdoria, el Atalanta-Sassuolo y el Verona-Cagliari por el coronavirus'
+            { texto: 'Italia suspende el Inter-Sampdoria, el Atalanta-Sassuolo y el Verona-Cagliari por el coronavirus'}
         ]
     },
     {
@@ -250,7 +252,7 @@ export const DIAS = [
         infectadosEspana: 2,
         muertosEspana: 1,
         descripcion: [
-            'El norte de Italia restringe los actos públicos por temor al coronavirus'
+            { texto: 'El norte de Italia restringe los actos públicos por temor al coronavirus'}
         ]
     },
 
@@ -261,8 +263,8 @@ export const DIAS = [
         infectadosEspana: 2,
         muertosEspana: 1,
         descripcion: [
-            'La OMS: "Debemos prepararnos para una eventual pandemia" de coronavirus',
-            'El Ibex pierde 20.900 millones de euros en un "lunes negro" por el miedo al coronavirus'
+            { texto: 'La OMS: "Debemos prepararnos para una eventual pandemia" de coronavirus'},
+            { texto: 'El Ibex pierde 20.900 millones de euros en un "lunes negro" por el miedo al coronavirus'}
         ]
     },
     {
@@ -272,8 +274,8 @@ export const DIAS = [
         infectadosEspana: 5,
         muertosEspana: 1,
         descripcion: [
-            'El coronavirus llega a Madrid: primer caso, un paciente de 24 años',
-            'Tres nuevos casos de coronavirus en Espana: Barcelona, Castellón y la esposa del médico en Tenerife'
+            { texto: 'El coronavirus llega a Madrid: primer caso, un paciente de 24 años' },
+            { texto: 'Tres nuevos casos de coronavirus en Espana: Barcelona, Castellón y la esposa del médico en Tenerife'}
             //'Tras la reunión interministerial sobre coronavirus sin anunciar una sola medida, Sánchez afirma en twitter que Espana necesita un gobierno de acción, resolutivo y ejecutivo.'
         ]
     },
@@ -283,7 +285,9 @@ export const DIAS = [
         muertosItalia: 12,
         infectadosEspana: 10,
         muertosEspana: 1,
-        descripcion: 'Sánchez recibe a Torra con todos los honores y a dos banderas en Moncloa.  Sanidad anuncia por tuit que quien haya venido de zona de riesgo no tiene que hacer nada.'
+        descripcion: [
+            { texto: 'Sánchez recibe a Torra con todos los honores y a dos banderas en Moncloa.  Sanidad anuncia por tuit que quien haya venido de zona de riesgo no tiene que hacer nada.'}
+        ]
     },
     {
         fecha: new Date('2020-02-27'),
@@ -291,7 +295,9 @@ export const DIAS = [
         muertosItalia: 17,
         infectadosEspana: 17,
         muertosEspana: 1,
-        descripcion: 'El gobierno sube el techo de gasto.'
+        descripcion: [
+            { texto: 'El gobierno sube el techo de gasto.'}
+        ]
     },
     {
         fecha: new Date('2020-02-28'),
@@ -299,7 +305,7 @@ export const DIAS = [
         muertosItalia: 21,
         infectadosEspana: 33,
         muertosEspana: 1,
-        descripcion: '45 casos'
+        descripcion: []
     },
     {
         fecha: new Date('2020-02-29'),
@@ -308,8 +314,8 @@ export const DIAS = [
         infectadosEspana: 50,
         muertosEspana: 1,
         descripcion: [
-            'Italia. Ni a puerta cerrada: aplazados 5 partidos de la Serie A por el coronavirus, incluido el Juve-Inter',
-            '59 casos. Pedro Sánchez anuncia medidas (sin concretar ninguna) para aplacar las revueltas de agricultores.'
+            { texto: 'Italia. Ni a puerta cerrada: aplazados 5 partidos de la Serie A por el coronavirus, incluido el Juve-Inter'},
+            { texto: '59 casos. Pedro Sánchez anuncia medidas (sin concretar ninguna) para aplacar las revueltas de agricultores.'}
         ]
     },
     {
@@ -318,7 +324,7 @@ export const DIAS = [
         muertosItalia: 34,
         infectadosEspana: 73,
         muertosEspana: 1,
-        descripcion: 'Pedro Sánchez defiende el "diálogo" con Torra. Por si no había quedado claro días antes. '
+        descripcion: [{ texto: 'Pedro Sánchez defiende el "diálogo" con Torra. Por si no había quedado claro días antes. '}]
     },
     {
         fecha: new Date('2020-03-02'),
@@ -326,7 +332,7 @@ export const DIAS = [
         muertosItalia: 52,
         infectadosEspana: 119,
         muertosEspana: 1,
-        descripcion: 'Pedro Sánchez anuncia su compromiso con la "descarbonización".'
+        descripcion: [{ texto: 'Pedro Sánchez anuncia su compromiso con la "descarbonización".'}]
     },
     {
         fecha: new Date('2020-03-03'),
@@ -334,15 +340,15 @@ export const DIAS = [
         muertosItalia: 79,
         infectadosEspana: 150,
         muertosEspana: 1,
-        descripcion: 'El gobierno presenta su proyecto de ley de Libertad Sexual.'
+        descripcion: [{ texto: 'El gobierno presenta su proyecto de ley de Libertad Sexual.'}]
     },
     {
         fecha: new Date('2020-03-04'),
         infectadosItalia: 2706,
         muertosItalia: 107,
         infectadosEspana: 198,
-        muertosEspana: 1,
-        descripcion: 'Sánchez emite sus "condolencias".'
+        muertosEspana: 3,
+        descripcion: [{ texto: 'Sánchez es consciente de los primeros muertos en España por coronavirus, tal y como demuestra su mensaje de condolencias'}]
     },
     {
         fecha: new Date('2020-03-05'),
@@ -350,7 +356,7 @@ export const DIAS = [
         muertosItalia: 148,
         infectadosEspana: 237,
         muertosEspana: 3,
-        descripcion: '282 casos, tercer muerto. Pedro Sánchez anima a llenar las calles en el 8M.'
+        descripcion: [{ texto: '282 casos, tercer muerto. Pedro Sánchez anima a llenar las calles en el 8M.'}]
     },
     {
         fecha: new Date('2020-03-06'),
@@ -358,7 +364,9 @@ export const DIAS = [
         muertosItalia: 197,
         infectadosEspana: 365,
         muertosEspana: 5,
-        descripcion: '365 casos. Sánchez vuelve a animar a salir a la calle el 8M: "sin feminismo no hay futuro".'
+        descripcion: [
+            { texto: '365 casos. Sánchez vuelve a animar a salir a la calle el 8M: "sin feminismo no hay futuro".'}
+        ]
     },
     {
         fecha: new Date('2020-03-07'),
@@ -366,7 +374,7 @@ export const DIAS = [
         muertosItalia: 233,
         infectadosEspana: 430,
         muertosEspana: 8,
-        descripcion: '430 casos, décimo fallecido.  El PSOE afirma en twitter que "hay que salir a llenar las calles". También 7 de Marzo:  Simón afirma que el brote está bajo control y deja al criterio de cada uno si asistir al 8M.'
+        descripcion: [{ texto: '430 casos, décimo fallecido.  El PSOE afirma en twitter que "hay que salir a llenar las calles". También 7 de Marzo:  Simón afirma que el brote está bajo control y deja al criterio de cada uno si asistir al 8M.'}]
     },
     {
         fecha: new Date('2020-03-08'),
@@ -374,7 +382,7 @@ export const DIAS = [
         muertosItalia: 366,
         infectadosEspana: 589,
         muertosEspana: 17,
-        descripcion: '674 casos. 17 muertos.  120.000 personas salen a la calle solo en Madrid. A la cabeza, el gobierno. Irene Montero ya presenta síntomas. Celaá y otras mimistras, más prudentes, asisten con guantes. Begoña, señora de Sánchez, a la cabeza de la manifa, aún no presenta síntomas.'
+        descripcion: [{ texto: '674 casos. 17 muertos.  120.000 personas salen a la calle solo en Madrid. A la cabeza, el gobierno. Irene Montero ya presenta síntomas. Celaá y otras mimistras, más prudentes, asisten con guantes. Begoña, señora de Sánchez, a la cabeza de la manifa, aún no presenta síntomas.'}]
     },
     {
         fecha: new Date('2020-03-09'),
@@ -382,7 +390,7 @@ export const DIAS = [
         muertosItalia: 463,
         infectadosEspana: 999,
         muertosEspana: 29,
-        descripcion: 'misteriosamente, todo cambia. De la noche a la mañana, el gobierno cambia de actitud. Ya no hay que salir a llenar las calles. El ministro de Sanidad alega que ha habido un "cambio de situación el domingo al anochecer".'
+        descripcion: [{ texto: 'misteriosamente, todo cambia. De la noche a la mañana, el gobierno cambia de actitud. Ya no hay que salir a llenar las calles. El ministro de Sanidad alega que ha habido un "cambio de situación el domingo al anochecer".'}]
     },
     {
         fecha: new Date('2020-03-10'),
@@ -420,7 +428,7 @@ export const DIAS = [
         muertosItalia: 1266,
         infectadosEspana: 4209,
         muertosEspana: 121,
-        descripcion: '3000 infectados, 100 muertos. Solo 5 días después de animar a "llenar las calles", el gobierno anuncia confinamiento en casa.'
+        descripcion: [{ texto: '3000 infectados, 100 muertos. Solo 5 días después de animar a "llenar las calles", el gobierno anuncia confinamiento en casa.'}]
     },
     {
         fecha: new Date('2020-03-14'),
@@ -436,7 +444,7 @@ export const DIAS = [
         muertosItalia: 1809,
         infectadosEspana: 7753,
         muertosEspana: 292,
-        descripcion: 'en convulso y eterno consejo extraordinario de ministros, el comunista Iglesias se presenta de improviso rompiendo la cuarentena y exige la nacionalización de eléctricas y medios de comunicación, y autonomía total de Cataluña y Vascongadas en la gestión de la crisis. Torra intenta reclutar a Urkullu y anuncia que no aceptará imposiciones desde Madrid.  Sánchez se hunde, pero la vice económica Calviño da la batalla, amenaza con dimitir e insta a dimitir a Iglesias.  Al final se impone Calviño. Sánchez comparece en rueda de prensa (en falso directo y sin prensa) y anuncia control total sobre todo el territorio sin excepción. Ni rastro de las peticiones del comunista. Tampoco nadie de su partido en el gabinete de crisis.  En sus horas más vulnerables, el vicepresidente Iglesias no ha dudado en querer los controlar medios de comunicación y eléctricas (equivale a tener al pueblo agarrado del cuello y de los huevos) mientras permitiría la escisión efectiva de territorios nacionales. Todo un golpe de estado.'
+        descripcion: [{ texto: 'en convulso y eterno consejo extraordinario de ministros, el comunista Iglesias se presenta de improviso rompiendo la cuarentena y exige la nacionalización de eléctricas y medios de comunicación, y autonomía total de Cataluña y Vascongadas en la gestión de la crisis. Torra intenta reclutar a Urkullu y anuncia que no aceptará imposiciones desde Madrid.  Sánchez se hunde, pero la vice económica Calviño da la batalla, amenaza con dimitir e insta a dimitir a Iglesias.  Al final se impone Calviño. Sánchez comparece en rueda de prensa (en falso directo y sin prensa) y anuncia control total sobre todo el territorio sin excepción. Ni rastro de las peticiones del comunista. Tampoco nadie de su partido en el gabinete de crisis.  En sus horas más vulnerables, el vicepresidente Iglesias no ha dudado en querer los controlar medios de comunicación y eléctricas (equivale a tener al pueblo agarrado del cuello y de los huevos) mientras permitiría la escisión efectiva de territorios nacionales. Todo un golpe de estado.'}]
     },
     {
         fecha: new Date('2020-03-16'),
@@ -500,9 +508,6 @@ export const DATA =  [
         video: 'i1ZMaZmXumw',
         fecha: new Date('2020-01-31')
     },
-
-
-
     {
         nombre: 'Pedro Sánchez',
         comentario: [
@@ -514,23 +519,34 @@ export const DATA =  [
     },
     {
         nombre: 'Salvador Illa',
-        comentario: ['Los sistemas de prevención y alerta están dando resultados'],
-        fecha: new Date('2020-02-01')
+        comentario: ['Los sistemas de detección y alerta que pusimos en su momento en funcionamiento están dando sus resultados'],
+        fecha: new Date('2020-02-01'),
+        video: 'xi9SbjDMvMo',
+        minuto: '11:10'
     },
     {
         nombre: 'Illa',
-        comentario: 'No hay ninguna razón de salud pública que nos aconseje anular el Mobile World Congress',
+        comentario: ['No hay ninguna razón de salud pública que nos aconseje anular el Mobile World Congress'],
         fecha: new Date('2020-02-12')
     },
     {
         nombre: 'Illa',
-        comentario: 'El único síndrome a combatir es el síndrome del miedo',
+        comentario: ['El único síndrome a combatir es el síndrome del miedo'],
         fecha: new Date('2020-02-12')
     },
     {
         nombre: 'María Jesús Montero',
-        comentario: 'Espana está preparada para el coronavirus',
+        comentario: ['Espana está preparada para el coronavirus'],
         video: '1koZ1qXpHB0',
+        fecha: new Date('2020-02-25')
+    },
+    {
+        nombre: 'Echenique',
+        comentario: [
+            'En las portadas y en las tertulias el coronavirus corre desbocado y es una peligrosísima pandemia que causa pavor.  En el mundo real, el coronavirus está absolutamente controlado en Espana.  Ojalá un día el sistema mediático tenga la mitad de calidad que el sistema sanitario.'
+        ],
+        media: '2020-02-25-echenique.png',
+        link: 'https://twitter.com/pnique/status/1232217711125684224',
         fecha: new Date('2020-02-25')
     },
     {
@@ -552,27 +568,102 @@ export const DATA =  [
         comentario:  [
             'Es más probable morir atropellado porque la mascarilla para protegerte del coronavirus se mueva y te tape los ojos que por el propio virus.'
         ],
+        media: '2020-02-25-antonio-maestre.png',
+        link: 'https://twitter.com/AntonioMaestre/status/1232255709103960064',
         fecha: new Date('2020-02-25')
     },
     {
-        nombre: 'Echenique',
-        comentario: [
-            'En las portadas y en las tertulias el coronavirus corre desbocado y es una peligrosísima pandemia que causa pavor.  En el mundo real, el coronavirus está absolutamente controlado en Espana.  Ojalá un día el sistema mediático tenga la mitad de calidad que el sistema sanitario.'
+        nombre: 'Iñaki Gabilondo',
+        comentario:  [
+            '¿No te ha cogido esto de... la hiteria del coronavirus?  No sabia si traer máscara para hoy',
+            'La sociedad es un poco infancil en general, no en este caso, en general'
         ],
-        fecha: new Date('2020-02-25')
+        video: 'prGjS1IVcHc',
+        minuto: '1:34',
+        fecha: new Date('2020-02-29')
+    },
+    {
+        nombre: 'Pedro Sanchez',
+        comentario: [
+            'No estamos ni mucho menos en algo que parezca una epidemia zombie ni una enfermedad mortal que vaya a arrasar la humanidad'
+        ],
+        media: '2020-03-04-pdr.png',
+        link: 'https://twitter.com/sanchezcastejon/status/1235285574648582145',
+        fecha: new Date('2020-03-04')
+    },
+
+    
+    {
+        nombre: 'Ignacio Escolar',
+        comentario: [
+            'No estamos ni mucho menos en algo que parezca una epidemia zombie ni una enfermedad mortal que vaya a arrasar la humanidad'
+        ],
+        video: 'prGjS1IVcHc',
+        minuto: '1:55',
+        fecha: new Date('2020-03-05')
+    },
+    {
+        nombre: 'Pedro Sánchez',
+        comentario: [
+            'Os acompañamos en esta lucha para lograr la igualdad real entre mujeres y hombres. Sin descanso. Porque sin feminismo no hay futuro, sin igualdad no hay democracia'
+        ],
+        media: '2020-03-06-pdz.png',
+        link: 'https://twitter.com/sanchezcastejon/status/1235901432370470912',
+        fecha: new Date('2020-03-06')
     },
     {
         nombre: 'Cristina Almeida',
         comentario: [
-            'La reivindicación va más allá del riesgo.  El machismo es mucho más peligroso'
+            'La reivindicación va más allá del riesgo.  El machismo es mucho más peligroso',
+            'Hemos tenido un virus durante siglos que ha sido el machismo',
+            'Ferreras puntualiza: ¿Hemos?... Tenemos!'
         ],
+        video: 'VM3B-q6uGCY',
         fecha: new Date('2020-03-06')
+    },    
+    {
+        nombre: 'Carmen Calvo',
+        comentario: [
+            'Le diría que le va la vida, que le va su vida. Que le va seguir tomando decisiones para proteger su seguridad',
+            'Como nos va la vida en lo colectivo, porque en lo individual nadie se salva solo, que tiene que formar parte de esto, que estamos viviendo en el siglo XXI, y que por más que se empeñen quienes se empeñen, esto ya no tiene retorno'
+        ],
+        video: 'PYNtq3xm96A',
+        fecha: new Date('2020-03-07')
     },
+    {
+        nombre: 'PSOE',
+        comentario: [
+            'Mañana, #8M hay que salir a llenar las calles para reivindicar la igualdad y el derecho de las mujeres a ser libres, independientes y seguras.',
+        ],
+        media: '2020-03-07-psoe.png',
+        link: 'https://twitter.com/PSOE/status/1236385764730179585',
+        fecha: new Date('2020-03-07')
+    },
+    {
+        nombre: 'Susana Griso',
+        comentario: [
+            '8 de marzo, domingo, pero que ni festivo ni coronavirus nos impida salir a reivindicar nuestros derechos'
+        ],
+        video: 'ypP8DvXoa8E',
+        fecha: new Date('2020-03-08')
+    },
+    {
+        nombre: 'Irene Montero',
+        comentario: [
+            'Nadie duda que la gestión que están haciendo los expertos para tomar cada decisión minuto a minuto está siendo la adecuada, la que mejor y más puede proteger la salud de todos los ciudadanos y las ciudadanas...'
+        ],
+        video: 'tkDEBonk754',
+        fecha: new Date('2020-03-08')
+    },
+    
+    
     {
         nombre: 'Anabel Alonso',
         comentario: [
             '#ViolenciaMachista 14 #COVID19 0.  Todos los titulares siguen siendo para el segundo.'
         ],
+        media: '2020-03-02-anabel-alonso.png',
+        link: 'https://twitter.com/AnabelAlonso_of/status/1234501807356960773',
         fecha: new Date('2020-03-02')
     },
 ]

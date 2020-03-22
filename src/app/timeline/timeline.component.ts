@@ -25,7 +25,7 @@ export class TimelineComponent implements OnInit {
 
         this.diario = this.diario.filter(dia => {
           const hayDesc = Array.isArray(dia.descripcion) && dia.descripcion.length > 0;
-          const hayComentarios = Array.isArray(dia.comentarios) && dia.comentarios.length > 0;
+          const hayComentarios = Array.isArray(dia.comentario) && dia.comentario.length > 0;
 
           return hayDesc || hayComentarios;
         });

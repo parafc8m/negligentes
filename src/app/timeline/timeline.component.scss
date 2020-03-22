@@ -12,6 +12,12 @@
 
         .descripcion {
             display: flex;
+
+            .texto {
+                &.media {
+                    padding-right: 8px;
+                }
+            }
         }
     }
 
@@ -35,6 +41,11 @@
 
             .texto {
                 font-size: 10pt;
+            }
+
+            .minuto {
+                color: gray;
+                font-size: 8pt;
             }
 
         }

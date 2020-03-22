@@ -15,9 +15,10 @@
         </div>
         <div class="descripciones">
             <div *ngFor="let text of dia.descripcion" class="descripcion">
-                <div class="texto">{{ text.texto }}</div>
-                <div class="media" *ngIf="text.media"><a href=""><img src="assets/{{ text.media }}"/></a></div>
-
+                <div class="texto" [class.media]="!!text.media">{{ text.texto }}</div>
+                <div class="media" *ngIf="text.media">
+                    <a href="{{text.link}}" target="_blank"><img src="assets/{{ text.media }}"/></a>
+                </div>
             </div>
         </div>
         <div class="comentarios">
@@ -30,13 +31,19 @@
                         {{ item.nombre }}
                     </div>
                     <div class="texto">
-                        {{ item.comentario }}
+                        <p *ngFor="let parrafo of item.comentario">{{ parrafo }}</p>
+                    </div>
+                    <div class="minuto" *ngIf="item.minuto">
+                        Minuto: {{ item.minuto }}
                     </div>
                 </div>
                 <div class="video" *ngIf="item.video">
                     <iframe width="560" height="315" [src]="getUrlVideo(item.video)"
                     frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                     </iframe>
+                </div>
+                <div class="media" *ngIf="item.media">
+                    <a href="{{item.link}}" target="_blank"><img src="assets/{{ item.media }}"/></a>
                 </div>
             </div>
         </div>
