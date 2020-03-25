@@ -21,7 +21,11 @@ export const DIAS = [
         muertosEspana: 0,
         descripcion: [
             { texto: 'Primer caso de coronavirus en Espana: un paciente da positivo en La Gomera' },
-            { texto: 'Estados Unidos prohibe temporalmente la entrada a extranjeros que hayan estado recientemente en China' }
+            { texto: 'Estados Unidos prohibe temporalmente la entrada a extranjeros que hayan estado recientemente en China' },
+            { 
+                texto: 'Médicos, Pedro Cavadas, ya hablaban de la peligrosidad del virus', 
+                video: 'wFZdCk5Pzqc'
+            }
         ]
     },
     {
@@ -58,6 +62,7 @@ export const DIAS = [
         infectadosEspana: 1,
         muertosEspana: 0,
         descripcion: [
+            { texto: 'Ya son 425 los muertos por el coronavirus en China' }
         ]
     },
     {
@@ -67,7 +72,7 @@ export const DIAS = [
         infectadosEspana: 1,
         muertosEspana: 0,
         descripcion: [
-            { texto: 'La OMS pide 650 millones de dólares a los gobiernos para un plan de respuesta ante el coronavirus'}
+            // { texto: 'La OMS pide 650 millones de dólares a los gobiernos para un plan de respuesta ante el coronavirus'}
         ]
     },
     {
@@ -113,7 +118,7 @@ export const DIAS = [
     },
     {
         fecha: new Date('2020-02-10'),
-        infectadosItalia: 0,
+        infectadosItalia: 3,
         muertosItalia: 0,
         infectadosEspana: 2,
         muertosEspana: 0,
@@ -138,8 +143,7 @@ export const DIAS = [
         infectadosEspana: 2,
         muertosEspana: 0,
         descripcion: [
-            { texto: 'Barcelona. La organización cancela el Mobile World Congress por el brote de coronavirus'},
-            // 'El gobierno cree que no hay ninguna razón para que el Mobile World Congress no se celebre'
+            // { texto: 'Barcelona. La organización cancela el Mobile World Congress por el brote de coronavirus'},
         ]
     },
     {
@@ -263,8 +267,19 @@ export const DIAS = [
         infectadosEspana: 2,
         muertosEspana: 1,
         descripcion: [
-            { texto: 'La OMS: "Debemos prepararnos para una eventual pandemia" de coronavirus'},
-            { texto: 'El Ibex pierde 20.900 millones de euros en un "lunes negro" por el miedo al coronavirus'}
+            { 
+                texto: 'El Ministerio de Sanidad realiza un informe del coronavirus "Evaluación de Riesgo para España".',
+                media: 'MwuPWn.png',
+                link: 'https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Evaluacion_de_riesgo_y_medidas.pdf'
+            },
+            { 
+                texto: 'En él se recogen las medidas que ya había tomado Italia el día 23/02/2020.',
+                media: 'C1s9PB.png',
+                link: 'https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Evaluacion_de_riesgo_y_medidas.pdf'
+            },
+            {
+                texto: 'https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Evaluacion_de_riesgo_y_medidas.pdf'
+            }
         ]
     },
     {
@@ -348,7 +363,10 @@ export const DIAS = [
         muertosItalia: 107,
         infectadosEspana: 198,
         muertosEspana: 3,
-        descripcion: [{ texto: 'Sánchez es consciente de los primeros muertos en España por coronavirus, tal y como demuestra su mensaje de condolencias'}]
+        descripcion: [
+            { texto: 'Sánchez es consciente de los primeros muertos en España por coronavirus, tal y como demuestra su mensaje de condolencias'},
+            { texto: 'Illa cancela el Congreso de Médicos por el coronavirus y otros eventos "prescindibles", no el 8M claro está'}
+        ]
     },
     {
         fecha: new Date('2020-03-05'),
@@ -376,7 +394,11 @@ export const DIAS = [
         muertosEspana: 8,
         descripcion: [
             { texto: '430 casos, décimo fallecido.  El PSOE afirma en twitter que "hay que salir a llenar las calles". También 7 de Marzo:  Simón afirma que el brote está bajo control y deja al criterio de cada uno si asistir al 8M.'},
-            { texto: 'GOBIERNO Y SUS VOCEROS ENVÍA A ESPAÑA AL MATADERO'}
+            { 
+                texto: 'La maratón de Barcelona prevista para el 15 de marzo se suspende, pero no el 8M',
+                media: 'vanguardia.png',
+                link: 'https://www.lavanguardia.com/deportes/otros-deportes/20200307/473996032104/maraton-barcelona-aplazado-coronavirus.html'              
+            }
         ]
     },
     {
@@ -528,14 +550,24 @@ export const DATA =  [
         minuto: '11:10'
     },
     {
-        nombre: 'Illa',
-        comentario: ['No hay ninguna razón de salud pública que nos aconseje anular el Mobile World Congress'],
-        fecha: new Date('2020-02-12')
+        nombre: 'Pedro Sánchez',
+        comentario: [
+            'Lamentamos la posible estigmatización que la comunidad china pueda estar sufriendo.  Las personas no son un virus, la xenofobia sí.'
+        ],
+        media: '2020-03-24-200925.png',
+        link: 'https://twitter.com/sanchezcastejon/status/1224756296022482946',
+        fecha: new Date('2020-02-04')
     },
+
+    
     {
         nombre: 'Illa',
-        comentario: ['El único síndrome a combatir es el síndrome del miedo'],
-        fecha: new Date('2020-02-12')
+        comentario: [
+            'España tiene un sistema de salud muy robusto.',  
+            'No hay ninguna razón de salud pública que aconseje a tomar ninguna medida'
+        ],
+        video: 'wbnCzhVJrOQ',
+        fecha: new Date('2020-02-13')
     },
     {
         nombre: 'María Jesús Montero',
@@ -604,10 +636,19 @@ export const DATA =  [
         fecha: new Date('2020-02-25')
     },
     {
+        nombre: 'Jordi Évole',
+        comentario:  [
+            'El coronavirus tiene los mismos efectos que la lotería de Navidad. Tú sabes que no te va a tocar, pero si un amigo tuyo compra un décimo en un bar de carretera de Zamora, tú compras con él, no vaya a ser que toque. Con las mascarillas debe pasar algo parecido. Podríamos denominarlo el síndrome noseaque : “No sea que toque…”, “no sea que me infecte…”'
+        ],
+        media: 'evole.png',
+        link: 'https://twitter.com/jordievole/status/1233654673917325314',
+        fecha: new Date('2020-02-29')
+    },
+    {
         nombre: 'Iñaki Gabilondo',
         comentario:  [
             '¿No te ha cogido esto de... la hiteria del coronavirus?  No sabia si traer máscara para hoy',
-            'La sociedad es un poco infancil en general, no en este caso, en general'
+            'La sociedad es un poco infantil en general, no en este caso, en general'
         ],
         video: 'prGjS1IVcHc',
         minuto: '1:34',
@@ -616,7 +657,7 @@ export const DATA =  [
     {
         nombre: 'Pedro Sanchez',
         comentario: [
-            'No estamos ni mucho menos en algo que parezca una epidemia zombie ni una enfermedad mortal que vaya a arrasar la humanidad'
+            'Mis condolencias a las familias de los fallecidos con coronavirus en Euskadi y Valencia y mi solidaridad con las personas afectadas por este virus. Tenemos un gran sistema sanitario y excelentes profesionales que están trabajando sin pausa en su detección precoz y tratamiento.'
         ],
         media: '2020-03-04-pdr.png',
         link: 'https://twitter.com/sanchezcastejon/status/1235285574648582145',
@@ -651,6 +692,15 @@ export const DATA =  [
         ],
         video: 'VM3B-q6uGCY',
         fecha: new Date('2020-03-06')
+    },
+    {
+        nombre: 'Salvador Illa',
+        comentario: [
+            'Hemos decidido cancelar todos aquellos congresos, jornadas, seminarios o cursos que impliquen profesionales sanitarios',
+            'Necesitamos que los profesionales sanitarios estén en perfectas condiciones y maximamente disponibles en los proximos días y semanas por lo tanto todo aquello que entendemos que es PRESCINDIBLE aconsejamos que se cancele y no se celebre',
+        ],
+        video: 'tPiYrXjd5Kg',
+        fecha: new Date('2020-03-04')
     },
     {
         nombre: 'PODEMOS',
@@ -688,6 +738,14 @@ export const DATA =  [
         fecha: new Date('2020-03-08')
     },
     {
+        nombre: 'Susana Griso',
+        comentario: [
+            'Este año el 8 de marzo cae en domingo pero que ni el festivo ni el coronavirus sea una excusa para que salgamos a reivindicar nuestros derechos.  Estamos muy lejos de conseguir la igualdad'
+        ],
+        video: 'ZGWiEeNZVGc',
+        fecha: new Date('2020-03-04')
+    },
+    {
         nombre: 'Irene Montero',
         comentario: [
             'Nadie duda que la gestión que están haciendo los expertos para tomar cada decisión minuto a minuto está siendo la adecuada, la que mejor y más puede proteger la salud de todos los ciudadanos y las ciudadanas...'
@@ -706,4 +764,24 @@ export const DATA =  [
         link: 'https://twitter.com/AnabelAlonso_of/status/1234501807356960773',
         fecha: new Date('2020-03-02')
     },
+    {
+        nombre: 'Ministerio de Sanidad',
+        comentario: [
+            'Al llegar de una zona de riesgo puedes hacer vida normal'
+        ],
+        media: '2020-03-24-191005.png',
+        link: 'https://twitter.com/AnabelAlonso_of/status/1234501807356960773',
+        fecha: new Date('2020-02-26')
+    },
+
+    {
+        nombre: 'Anónimo en TVE',
+        comentario: [
+            'El coronavirus no existe.  Yo doy besos a todo el mundo',
+        ],
+        video: 'j0BRyAyeRhQ',
+        fecha: new Date('2020-03-08')
+    }
+
+    
 ]

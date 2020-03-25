@@ -14,41 +14,53 @@
             display: flex;
 
             .texto {
-                &.media {
+                &.con-media {
                     padding-right: 8px;
                 }
                 margin-bottom: 8px;
             }
+
+            .media {
+                img {
+                    width: 100%;
+                }
+            }
         }
     }
 
-    .comentario {
-        margin-bottom: 8px;
-        display: flex;
-        >div {
-            flex: 1 1;
-        }
-
-        .foto {
-            max-width: 90px;
-        }
-
-        .nombre-texto {
-            padding-top: 8px;
-            padding-right: 8px;
-            .nombre {
-                font-weight: bold;
+    .comentarios {        
+        .comentario {
+            &:first-child {
+                border-top: 1px solid gray;
+                padding-top: 16px;
+            }
+            margin-bottom: 8px;
+            display: flex;
+            >div {
+                flex: 1 1;
             }
 
-            .texto {
-                font-size: 10pt;
+            .foto {
+                max-width: 90px;
             }
 
-            .minuto {
-                color: gray;
-                font-size: 8pt;
-            }
+            .nombre-texto {
+                padding-top: 8px;
+                padding-right: 8px;
+                .nombre {
+                    font-weight: bold;
+                }
 
+                .texto {
+                    font-size: 10pt;
+                }
+
+                .minuto {
+                    color: gray;
+                    font-size: 8pt;
+                }
+
+            }
         }
     }
 }

@@ -15,11 +15,16 @@
         </div>
         <div class="descripciones">
             <div *ngFor="let text of dia.descripcion" class="descripcion">
-                <div class="texto" [class.media]="!!text.media">
+                <div class="texto" [class.con-media]="!!text.media || !!text.video">
                     {{ text.texto }}
                 </div>
                 <div class="media" *ngIf="text.media">
                     <a href="{{text.link}}" target="_blank"><img src="assets/{{ text.media }}"/></a>
+                </div>
+                <div class="video" *ngIf="text.video">
+                    <iframe width="500" height="280" [src]="getUrlVideo(text.video)"
+                    frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
                 </div>
             </div>
         </div>
@@ -40,7 +45,7 @@
                     </div>
                 </div>
                 <div class="video" *ngIf="item.video">
-                    <iframe width="560" height="315" [src]="getUrlVideo(item.video)"
+                    <iframe width="500" height="280" [src]="getUrlVideo(item.video)"
                     frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                     </iframe>
                 </div>
